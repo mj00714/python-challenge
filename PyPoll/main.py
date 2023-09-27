@@ -2,7 +2,7 @@
 import os
 import csv
 
-# set the path for the PyBank file (run from the Python-Challenge directory)
+# set the path for the PyPoll file (run from the Python-Challenge directory)
 election_data = os.path.join('PyPoll/Resources/election_data.csv')
 
 total_votes = {}

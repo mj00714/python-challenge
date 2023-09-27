@@ -55,3 +55,18 @@ for index, value in total_votes.items():
 print('-----------------------------------------')
 print(f'Winner: {max(total_votes, key=total_votes.get)}')
 print('-----------------------------------------')
+
+# create a txt file and export the data
+
+output_path = os.path.join('PyPoll/analysis/analysis_data.txt')
+with open(output_path, "w", newline='') as datafile:
+    datafile.write(
+    'Election Results\n'
+    f'-----------------------------------------\n'
+    f'Total Votes: {total_votes_cast}\n'
+    f'-----------------------------------------\n')
+    for index, value in total_votes.items():
+        datafile.write(f'{index}: {value / total_votes_cast:.3%} ({value})\n')
+    datafile.write(f'-----------------------------------------\n'
+    f'Winner: {max(total_votes, key=total_votes.get)}\n'
+    '-----------------------------------------')

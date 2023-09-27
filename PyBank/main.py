@@ -70,7 +70,7 @@ with open(budget_data, encoding='UTF-8') as budget_data:
     print('')
 
     # create a txt file and export the data
-    output_path = os.path.join('PyBank/analysis/analysis_data.csv')
+    output_path = os.path.join('PyBank/analysis/analysis_data.txt')
     with open(output_path, "w", newline='') as datafile:
         print('Financial Analysis\n'
         '------------------------\n'

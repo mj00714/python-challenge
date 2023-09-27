@@ -59,7 +59,7 @@ with open(budget_data, encoding='UTF-8') as budget_data:
 
     # print the data
     print('')
-    print('Financial Analysis ')
+    print('Financial Analysis')
     print('')
     print('------------------------------------')
     print(f'Total Months: {number_of_months}')

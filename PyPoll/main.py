@@ -36,6 +36,7 @@ with open(election_data, encoding='UTF-8') as election_data:
 # for index, value in total_votes.items():
 #     print(f'{index}: {value} votes')
 
+# create a function to get the total vote count
 vote_count = total_votes.values()
 total_votes_cast = sum(vote_count)
 # check the total vote count

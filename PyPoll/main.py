@@ -16,11 +16,6 @@ with open(election_data, encoding='UTF-8') as election_data:
 
     # add a header row to the CSV file
     election_data_header = next(csvreader)
-    # print the header as a check
-    # print(f'CSV Header: {election_data_header}')
-
-    # set the reader to the first row for all of the variables
-    # first_row = next(csvreader) -- don't need this
 
     # count the number of votes for each candidate
     for row in csvreader:
@@ -32,18 +27,12 @@ with open(election_data, encoding='UTF-8') as election_data:
         # if the candidate is already in the list, add a vote
         else: total_votes[candidate] += 1
 
-# print the votes as a check
-# for index, value in total_votes.items():
-#     print(f'{index}: {value} votes')
 
 # create a function to get the total vote count
 vote_count = total_votes.values()
 total_votes_cast = sum(vote_count)
-# check the total vote count
-# print(f'Total Votes Cast: {total_votes_cast}')
 
 # calculate the percentages, by candidate
-
 
 # printout of the analysis
 print('')

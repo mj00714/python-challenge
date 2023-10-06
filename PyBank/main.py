@@ -19,8 +19,6 @@ with open(budget_data, encoding='UTF-8') as budget_data:
 
     # add a header row to the CSV file
     budget_data_header = next(csvreader)
-    # print the header as a check
-    # print(f"CSV Header: {budget_data_header}")
     
     # set the reader to the first row for all of the variables
     first_row = next(csvreader)

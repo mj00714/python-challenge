@@ -2,7 +2,7 @@
 import os
 import csv
 
-# set the path for the PyBank file (run from the Python-Challenge directory)
+# set the path for the PyBank file (from the PyBank Directory)
 budget_data = os.path.join('PyBank/Resources/budget_data.csv')
 
 number_of_months = 0
